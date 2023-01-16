@@ -1,0 +1,65 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/teacher/check",
+          "pathName": "pages/teacher/check",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teacher/temperature",
+          "pathName": "pages/teacher/temperature",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teacher/my",
+          "pathName": "pages/teacher/check",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teacher/my",
+          "pathName": "pages/teacher/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teacher/notice",
+          "pathName": "pages/teacher/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teacher/newnotice",
+          "pathName": "pages/teacher/newnotice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teacher/checknotice",
+          "pathName": "pages/teacher/checknotice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/company/statistics",
+          "pathName": "pages/company/statistics",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

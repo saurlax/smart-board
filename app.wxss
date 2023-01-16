@@ -1,0 +1,52 @@
+.backgroundbox {
+  position: absolute;
+  z-index: -99999;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+}
+
+.logo {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 50rpx;
+}
+
+.tab-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00b8ff;
+  height: 66px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  box-shadow: 0 0 2px #808080;
+}
+
+.tab {
+  height: 112rpx;
+  width: 112rpx;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 3px;
+  margin: 4px;
+}
+
+.tab-svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 2px;
+}
+
+.tab-selected {
+  background-color: #ffffff44;
+  border-radius: 6px;
+}

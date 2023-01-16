@@ -1,0 +1,35 @@
+<view class="newnotice-body">
+  <text class="newnotice-title">新建通知</text>
+  <view class="input-box">
+    <view class="input-unit space-unit">
+      <text class="input-unit-text">通知班级</text>
+      <picker range="{{classlist}}" mode="selector" class="classpicker" bindchange="classPickerChange"
+        value="{{class_index}}">
+        <view>
+          {{classlist[class_index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="input-unit space-unit">
+      <text class="input-unit-text">截止日期</text>
+      <picker range="{{day}}" value="{{day_index}}" bindchange="datePickerChange" class="datepicker">
+        <view>{{day[day_index]}}</view>
+      </picker>
+    </view>
+    <view class="input-unit">
+      <text class="input-unit-text">截止时间</text>
+      <picker mode="time" bindchange="timePickerChange" class="timepicker">
+        <view>{{time}}</view>
+      </picker>
+    </view>
+    <view class="input-unit space-unit">
+      <text class="input-unit-text">标题</text>
+      <input class="title-input" type="text" placeholder="请输入标题" maxlength="32" bindinput="titleInput"/>
+    </view>
+    <view class="input-unit">
+      <text class="input-unit-text">内容</text>
+      <textarea class="context-input" cols="128" placeholder="请输入内容" rows="1024" bindinput="contentInput"></textarea>
+    </view>
+  </view>
+  <button class="submit-btn" bindtap="addNoticeBtn">发布通知</button>
+</view>

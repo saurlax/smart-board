@@ -1,0 +1,87 @@
+<view class="check-body">
+  <view class="switchbar">
+    <!-- <text>下拉可刷新数据</text> -->
+    <view class="switchbar-text">
+      <picker range="{{classlist}}" mode="selector" class="classpicker" bindchange="classPickerChange"
+        value="{{class_index}}">
+        <view>
+          {{classlist[class_index]}}
+        </view>
+      </picker>
+      <picker class="datepicker" mode="date" bindchange="datePickerChange" start="2021-01-01" end="2025-12-31">
+        <view>
+          {{year}}年{{month}}月{{day}}日
+        </view>
+      </picker>
+      <picker class="periodpicker" bindchange="periodPickerChange" value="{{period_index}}" range="{{periods}}">
+        <view>
+          {{periods[period_index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="checkview">
+    <view class="checkcard">
+      <view class="checkcard-upper">
+        <view class="checkcard-blockcard">
+          <view>
+            <view class="block-weak">应到</view><text class="blockdata">{{shouldcome}}</text>
+          </view>
+          <view>
+            <view class="block-major">实到</view><text class="blockdata">{{realcome}}</text>
+          </view>
+        </view>
+        <view class="checkcard-blockcard">
+          <view>
+            <view class="block-stress">迟到</view><text class="blockdata">{{late}}</text>
+          </view>
+          <view>
+            <view class="block-weak">请假</view><text class="blockdata">{{leave}}</text>
+          </view>
+          <view>
+            <view class="block-weak">缺勤</view><text class="blockdata">{{notcome}}</text>
+          </view>
+        </view>
+        <view class="checkcard-blockcard">
+          <view>
+            <view class="block-major">最早到校</view><text class="blockdata">{{earliest}}</text>
+          </view>
+          <view>
+            <view class="block-major">最晚到校</view><text class="blockdata">{{latest}}</text>
+          </view>
+        </view>
+        <view class="checkcard-blockcard">
+          <view>
+            <view class="block-stress">体温过高</view><text class="blockdata">{{toohigh}}</text>
+          </view>
+          <view>
+            <view class="block-stress">体温过低</view><text class="blockdata">{{toolow}}</text>
+          </view>
+        </view>
+      </view>
+      <view wx:for="{{stu}}" wx:key="item" class="checkitem">
+        <view class="checkitem-upper"><text class="nametext">{{item.name}}</text>
+          <text class="temptext {{item.tempclass}}">{{item.temp}}</text>
+        </view>
+        <text class="timetext {{item.lateclass}}">{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="tab-bar">
+    <view class="tab tab-selected" bindtap="toCheck">
+      <image class="tab-svg"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5IDNINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMlY1YzAtMS4xLS45LTItMi0yek05IDE3SDd2LTdoMnY3em00IDBoLTJWN2gydjEwem00IDBoLTJ2LTRoMnY0eiI+PC9wYXRoPjwvc3ZnPg==" />
+      <text>考勤</text>
+    </view>
+    <view class="tab" bindtap="toNotice">
+      <image class="tab-svg"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwIDRINGMtMS4xIDAtMS45OS45LTEuOTkgMkwyIDE4YzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNmMwLTEuMS0uOS0yLTItMnptLS40IDQuMjVsLTcuMDcgNC40MmMtLjMyLjItLjc0LjItMS4wNiAwTDQuNCA4LjI1Yy0uMjUtLjE2LS40LS40My0uNC0uNzIgMC0uNjcuNzMtMS4wNyAxLjMtLjcyTDEyIDExbDYuNy00LjE5Yy41Ny0uMzUgMS4zLjA1IDEuMy43MiAwIC4yOS0uMTUuNTYtLjQuNzJ6Ij48L3BhdGg+PC9zdmc+" />
+      <text>通知</text>
+    </view>
+    <view class="tab" bindtap="toMy">
+      <image class="tab-svg"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAzYzEuNjYgMCAzIDEuMzQgMyAzcy0xLjM0IDMtMyAzLTMtMS4zNC0zLTMgMS4zNC0zIDMtM3ptMCAxNC4yYy0yLjUgMC00LjcxLTEuMjgtNi0zLjIyLjAzLTEuOTkgNC0zLjA4IDYtMy4wOCAxLjk5IDAgNS45NyAxLjA5IDYgMy4wOC0xLjI5IDEuOTQtMy41IDMuMjItNiAzLjIyeiIvPg0KPC9zdmc+" />
+      <text>我的</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="stt-body">
+  <!-- 应到 实到 人流量-折线图    手机 姓名 时间 体温 -->
+  <view>
+    <canvas canvas-id="columnCanvas" disable-scroll="true" class="canvas"></canvas>
+  </view>
+  <view class="tab-bar">
+    <view class="tab tab-selected" bindtap="toStatistics">
+      <image class="tab-svg"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTExIDMuMTh2MTcuNjRjMCAuNjQtLjU5IDEuMTItMS4yMS45OEM1LjMyIDIwLjggMiAxNi43OSAyIDEyczMuMzItOC44IDcuNzktOS44Yy42Mi0uMTQgMS4yMS4zNCAxLjIxLjk4em0yLjAzIDB2Ni44MWMwIC41NS40NSAxIDEgMWg2Ljc5Yy42NCAwIDEuMTItLjU5Ljk4LTEuMjItLjg1LTMuNzYtMy44LTYuNzItNy41NS03LjU3LS42My0uMTQtMS4yMi4zNC0xLjIyLjk4em0wIDEwLjgzdjYuODFjMCAuNjQuNTkgMS4xMiAxLjIyLjk4IDMuNzYtLjg1IDYuNzEtMy44MiA3LjU2LTcuNTguMTQtLjYyLS4zNS0xLjIyLS45OC0xLjIyaC02Ljc5Yy0uNTYuMDEtMS4wMS40Ni0xLjAxIDEuMDF6Ij48L3BhdGg+PC9zdmc+" />
+      <text>统计</text>
+    </view>
+    <view class="tab" bindtap="toActivity">
+      <image class="tab-svg"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE2IDEwSDhjLS41NSAwLTEgLjQ1LTEgMXMuNDUgMSAxIDFoOGMuNTUgMCAxLS40NSAxLTFzLS40NS0xLTEtMXptMy03aC0xVjJjMC0uNTUtLjQ1LTEtMS0xcy0xIC40NS0xIDF2MUg4VjJjMC0uNTUtLjQ1LTEtMS0xcy0xIC40NS0xIDF2MUg1Yy0xLjExIDAtMiAuOS0yIDJ2MTRjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptLTEgMTZINmMtLjU1IDAtMS0uNDUtMS0xVjhoMTR2MTBjMCAuNTUtLjQ1IDEtMSAxem0tNS01SDhjLS41NSAwLTEgLjQ1LTEgMXMuNDUgMSAxIDFoNWMuNTUgMCAxLS40NSAxLTFzLS40NS0xLTEtMXoiPjwvcGF0aD48L3N2Zz4=" />
+      <text>活动</text>
+    </view>
+    <view class="tab" bindtap="toMy">
+      <image class="tab-svg"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAzYzEuNjYgMCAzIDEuMzQgMyAzcy0xLjM0IDMtMyAzLTMtMS4zNC0zLTMgMS4zNC0zIDMtM3ptMCAxNC4yYy0yLjUgMC00LjcxLTEuMjgtNi0zLjIyLjAzLTEuOTkgNC0zLjA4IDYtMy4wOCAxLjk5IDAgNS45NyAxLjA5IDYgMy4wOC0xLjI5IDEuOTQtMy41IDMuMjItNiAzLjIyeiIvPg0KPC9zdmc+" />
+      <text>我的</text>
+    </view>
+  </view>
+</view>

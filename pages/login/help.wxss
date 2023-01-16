@@ -1,0 +1,10 @@
+.help-body {
+  padding: 8rpx;
+  font-size: 0.8rem;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.title {
+  font-weight: bold;
+}

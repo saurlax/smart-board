@@ -1,0 +1,39 @@
+<view class="notice-body">
+  <image class="new-btn" bindtap="toNewnotice"
+    src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE5IDEzaC02djZoLTJ2LTZINXYtMmg2VjVoMnY2aDZ2MnoiLz48L3N2Zz4=" />
+  <view>
+    <view class="notice">
+      <view class="notice-upper">
+        <text class="notice-title">通知列表</text>
+        <picker class="classpicker" range="{{$class}}" value="{{class_index}}" bindchange="classPickerChange">
+          <text>{{classname}}</text>
+        </picker>
+      </view>
+      <view class="notice-list">
+        <view class="noticeitem" wx:for="{{notice}}" bindtap="checkNotice" data-id="{{item.title}}" wx:key="item">
+          <view class="noticeitem-info">
+            <text class="noticeitem-title">{{item.title}}</text>
+          </view>
+          <text class="noticeitem-content">{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="tab-bar">
+      <view class="tab" bindtap="toCheck">
+        <image class="tab-svg"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5IDNINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMlY1YzAtMS4xLS45LTItMi0yek05IDE3SDd2LTdoMnY3em00IDBoLTJWN2gydjEwem00IDBoLTJ2LTRoMnY0eiI+PC9wYXRoPjwvc3ZnPg==" />
+        <text>考勤</text>
+      </view>
+      <view class="tab tab-selected" bindtap="toNotice">
+        <image class="tab-svg"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwIDRINGMtMS4xIDAtMS45OS45LTEuOTkgMkwyIDE4YzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNmMwLTEuMS0uOS0yLTItMnptLS40IDQuMjVsLTcuMDcgNC40MmMtLjMyLjItLjc0LjItMS4wNiAwTDQuNCA4LjI1Yy0uMjUtLjE2LS40LS40My0uNC0uNzIgMC0uNjcuNzMtMS4wNyAxLjMtLjcyTDEyIDExbDYuNy00LjE5Yy41Ny0uMzUgMS4zLjA1IDEuMy43MiAwIC4yOS0uMTUuNTYtLjQuNzJ6Ij48L3BhdGg+PC9zdmc+" />
+        <text>通知</text>
+      </view>
+      <view class="tab" bindtap="toMy">
+        <image class="tab-svg"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAzYzEuNjYgMCAzIDEuMzQgMyAzcy0xLjM0IDMtMyAzLTMtMS4zNC0zLTMgMS4zNC0zIDMtM3ptMCAxNC4yYy0yLjUgMC00LjcxLTEuMjgtNi0zLjIyLjAzLTEuOTkgNC0zLjA4IDYtMy4wOCAxLjk5IDAgNS45NyAxLjA5IDYgMy4wOC0xLjI5IDEuOTQtMy41IDMuMjItNiAzLjIyeiIvPg0KPC9zdmc+" />
+        <text>我的</text>
+      </view>
+    </view>
+  </view>
+</view>

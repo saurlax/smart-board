@@ -1,0 +1,12 @@
+<view class="checknotice-body">
+  <text class="checknotice-title">查看通知</text>
+  <view class="notice-box">
+    <text class="notice-title">{{title}}</text>
+    <view class="notice-info">
+      <text class="notice-class">通知班级：{{classname}}</text>
+      <text class="notice-endtime">截止时间：{{endtime}}</text>
+    </view>
+    <text class="notice-content">{{content}}</text>
+  </view>
+  <button class="delete-btn" bindtap="removeBtn">删除通知</button>
+</view>

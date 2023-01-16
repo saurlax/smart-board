@@ -1,0 +1,26 @@
+{
+  "entryPagePath": "pages/login/login",
+  "pages": [
+    "pages/login/login",
+    "pages/teacher/check",
+    "pages/teacher/notice",
+    "pages/login/help",
+    "pages/teacher/my",
+    "pages/teacher/newnotice",
+    "pages/teacher/checknotice",
+    "pages/teacher/checksettings",
+    "pages/company/statistics"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00b8ff",
+    "navigationBarTitleText": "智能测温班牌",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 2500,
+    "connectSocket": 2500,
+    "downloadFile": 5000
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,8 @@
+<view class="help-body">
+  <text class="title">无法登录&疑难解答\n</text>
+  <text>· 如若无法登录，请确认您的账号和密码输入正确，然后再试一次；\n</text>
+  <text>· 如果您对此小程序中的功能存在疑惑，请联系开发者来获取帮助。\n</text>
+  <text class="title">\nDebug for developer\n</text>
+  <text>Util.logger.logPool\n</text>
+  <text>{{log}}</text>
+</view>

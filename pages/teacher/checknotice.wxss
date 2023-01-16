@@ -1,0 +1,47 @@
+.checknotice-body {
+  display: flex;
+  flex-flow: column;
+  background-color: #f3f3f3;
+  height: 100vh;
+}
+
+
+.checknotice-title {
+  background-color: #00B8FF;
+  color: #fff;
+  padding: 5px;
+}
+
+.notice-box {
+  padding: 5px;
+  background-color: #fff;
+}
+
+.notice-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.notice-info {
+  display: flex;
+  justify-content: left;
+  flex-flow: column;
+  color: #808080;
+  font-size: 0.9rem;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: dashed 1px #d3d3d3;
+}
+
+.notice-class,
+.notice-id,
+.notice-endtime {
+  margin-right: 3px;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  margin: 10px;
+  font-size: 1rem;
+}

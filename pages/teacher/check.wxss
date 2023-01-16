@@ -1,0 +1,163 @@
+.check-body {
+  margin: 0;
+}
+
+.classpicker,
+.datepicker,
+.periodpicker {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switchbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #00b8ff;
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 3px 20px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 34px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+.switchbar-text {
+  font-size: 0.9rem;
+}
+
+.checkview {
+  display: flex;
+  flex-flow: column;
+  margin: 34px 0 22px 0;
+  background-color: #f3f3f3;
+  padding: 10px 10px;
+  min-height: 100vh;
+}
+
+.checkcard {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.blockdata {
+  min-width: 40px;
+  display: inline-block;
+}
+
+.block-major,
+.block-stress,
+.block-weak,
+.block-safe {
+  color: white;
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+
+.checkcard-blockcard {
+  display: flex;
+  justify-content: left;
+  margin: 5px 0;
+}
+
+.block-major {
+  background-color: #2980B9;
+}
+
+.block-stress {
+  background-color: #F39C12;
+}
+
+.block-weak {
+  background-color: #7f8c8d;
+}
+
+.block-safe {
+  background-color: #00d640;
+}
+
+.checkcard-upper {
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #34495e;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.itemtext {
+  background-color: #ebebeb;
+  padding: 1px;
+  border-radius: 2px;
+  color: #808080;
+}
+
+.checkitem {
+  padding: 20rpx;
+  border-bottom: dashed 1px #d3d3d3;
+}
+
+.checkitem:last-child {
+  border-bottom: none;
+}
+
+.checkitem-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.late::after {
+  content: "迟到";
+  background-color: #ff8800;
+  padding: 2px 3px;
+  border-radius: 2px;
+  color: #fff;
+  margin: 0 4px;
+}
+
+.nametext {
+  padding: 5px;
+  width: 500rpx;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.timetext {
+  font-size: 0.7rem;
+  color: #808080;
+}
+
+.temptext {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.temptext::after {
+  content: '°C';
+  font-weight: bold;
+}
+
+.high {
+  color: #C0392b;
+  text-decoration: underline;
+}
+
+.high::before {
+  content: "▲";
+}
+
+.low {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.low::before {
+  content: "▼";
+}

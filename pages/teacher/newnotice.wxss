@@ -1,0 +1,55 @@
+.newnotice-body {
+  display: flex;
+  flex-flow: column;
+  background-color: #f3f3f3;
+  height: 100vh;
+}
+
+.newnotice-title {
+  background-color: #00B8FF;
+  color: #fff;
+  padding: 5px;
+}
+
+.input-box {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.9rem;
+}
+
+.space-unit {
+  margin-top: 10px;
+}
+
+.input-unit {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 5px 0;
+}
+
+.input-unit-text {
+  width: 100px;
+  text-align: left;
+  margin: 0 5px;
+}
+
+.classpicker,
+.datepicker,
+.timepicker,
+.title-input,
+.context-input {
+  width: 100%;
+}
+
+.context-input {
+  height: 120px;
+}
+
+
+.submit-btn {
+  color: #fff;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #1ABC9C;
+}
